@@ -8,12 +8,12 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
 
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register || BOLT Sports Shop</title>
+    <title>Đăng Ký || Shop Thể Thao BOLT </title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -22,7 +22,7 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="index.php">BOLT Sports Shop</a></h1>
+          <h1><a href="index.php"><!-- BOLT Sports Shop --> Shop Thể Thao BOLT</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
@@ -30,20 +30,20 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
       <section class="top-bar-section">
       <!-- Right Nav Section -->
         <ul class="right">
-          <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="about.php">Về Công Ty</a></li>
+          <li><a href="products.php">Sản Phẩm</a></li>
+          <li><a href="cart.php">Xem Giỏ Hàng</a></li>
+          <li><a href="orders.php">Đơn Hàng Của Tôi</a></li>
+          <li><a href="contact.php">Liên Hệ</a></li>
           <?php
-
+    
           if(isset($_SESSION['username'])){
-            echo '<li><a href="account.php">My Account</a></li>';
-            echo '<li><a href="logout.php">Log Out</a></li>';
+            echo '<li><a href="account.php">Tài Khoản</a></li>';
+            echo '<li><a href="logout.php">Đăng Xuất</a></li>';
           }
           else{
-            echo '<li><a href="login.php">Log In</a></li>';
-            echo '<li class="active"><a href="register.php">Register</a></li>';
+            echo '<li><a href="login.php">Đăng Nhập</a></li>';
+            echo '<li class="active"><a href="register.php">Đăng Ký</a></li>';
           }
           ?>
         </ul>
@@ -60,7 +60,7 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
 
           <div class="row">
             <div class="small-4 columns">
-              <label for="right-label" class="right inline">First Name</label>
+              <label for="right-label" class="right inline">Tên</label>
             </div>
             <div class="small-8 columns">
               <input type="text" id="right-label" placeholder="Nayan" name="fname">
@@ -68,7 +68,7 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
           </div>
           <div class="row">
             <div class="small-4 columns">
-              <label for="right-label" class="right inline">Last Name</label>
+              <label for="right-label" class="right inline">Họ</label>
             </div>
             <div class="small-8 columns">
               <input type="text" id="right-label" placeholder="Seth" name="lname">
@@ -76,7 +76,7 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
           </div>
           <div class="row">
             <div class="small-4 columns">
-              <label for="right-label" class="right inline">Address</label>
+              <label for="right-label" class="right inline">Địa chỉ</label>
             </div>
             <div class="small-8 columns">
               <input type="text" id="right-label" placeholder="Infinite Loop" name="address">
@@ -84,14 +84,20 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
           </div>
           <div class="row">
             <div class="small-4 columns">
-              <label for="right-label" class="right inline">City</label>
+              <label for="right-label" class="right inline">Thành phố</label>
             </div>
             <div class="small-8 columns">
               <input type="text" id="right-label" placeholder="Mumbai" name="city">
             </div>
           </div>
-          
-          
+          <div class="row">
+            <div class="small-4 columns">
+              <label for="right-label" class="right inline">Mã Pin/label>
+            </div>
+            <div class="small-8 columns">
+              <input type="number" id="right-label" placeholder="400056" name="pin">
+            </div>
+          </div>
           <div class="row">
             <div class="small-4 columns">
               <label for="right-label" class="right inline">E-Mail</label>
@@ -102,7 +108,7 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
           </div>
           <div class="row">
             <div class="small-4 columns">
-              <label for="right-label" class="right inline">Password</label>
+              <label for="right-label" class="right inline">Mật khẩu</label>
             </div>
             <div class="small-8 columns">
               <input type="password" id="right-label" name="pwd">
@@ -113,7 +119,7 @@ if (isset($_SESSION["username"])) {header ("location:index.php");}
 
             </div>
             <div class="small-8 columns">
-              <input type="submit" id="right-label" value="Register" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px;">
+              <input type="submit" id="right-label" value="Đăng ký" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px;">
               <input type="reset" id="right-label" value="Reset" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px;">
             </div>
           </div>
