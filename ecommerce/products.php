@@ -69,10 +69,10 @@ include 'config.php';
               echo '<div class="large-4 columns">';
               echo '<p><h3>'.$obj->product_name.'</h3></p>';
               echo '<img src="images/products/'.$obj->product_img_name.'"/>';
-              echo '<p><strong>Product Code</strong>: '.$obj->product_code.'</p>';
-              echo '<p><strong>Description</strong>: '.$obj->product_desc.'</p>';
-              echo '<p><strong>Units Available</strong>: '.$obj->qty.'</p>';
-              echo '<p><strong>Price (Per Unit)</strong>: '.$currency.$obj->price.'</p>';
+              echo '<p><strong>Mã Sản phẩm</strong>: '.$obj->product_code.'</p>';
+              echo '<p><strong>Mô tả</strong>: '.$obj->product_desc.'</p>';
+              echo '<p><strong>Số lượng hiện có</strong>: '.$obj->qty.'</p>';
+              echo '<p><strong>Giá (trên một sản phẩm)</strong>: '.$currency.$obj->price.'</p>';
 
 
 
